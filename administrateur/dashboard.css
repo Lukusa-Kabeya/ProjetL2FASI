@@ -1,0 +1,105 @@
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; display: flex; height: 100vh; background: #f0f2f5; }
+        .sidebar {
+            width: 240px;
+            background: #1e3a8a;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .sidebar h2 { font-size: 20px; margin-bottom: 30px; }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+        .sidebar a:hover, .sidebar a.active { background: rgba(255, 255, 255, 0.2); }
+        .sidebar svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+        .main { flex: 1; padding: 30px; overflow-y: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+        .card-container { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px; }
+        .card {
+            background: white;
+            flex: 1;
+            min-width: 220px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .card h2 { color: #1e3a8a; font-size: 32px; }
+        .filters select, .filters button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-right: 10px;
+            background: white;
+        }
+        .filters { margin-bottom: 20px; }
+        .chart-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #1e3a8a;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        button {
+            cursor: pointer;
+            background-color: #1e3a8a;
+            border: none;
+            color: rgb(8, 8, 8);
+            padding: 8px 15px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #3b82f6;
+        }
+        select {
+            padding: 6px 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        .message {
+            background: #d4edda;
+            color: #155724;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            max-width: 700px;
+        }
